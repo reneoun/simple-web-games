@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.home > h1 {
+  text-align: center;
+  color:black;
+}
+
+.home, .App {
+  margin: 20px 10%;
+}
+
+.game_card > h2 {
+  text-decoration: none;
+  color: black;
+}
+
+.game_card {
+  border: black solid 3px;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  box-shadow: 5px 5px #8d8d8d;
+}
+
+
+.game_card:hover {
+  cursor: pointer;
+  /* opacity: 0.5; */
+  background-color: cornflowerblue;
+}
