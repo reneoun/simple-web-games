@@ -1,20 +1,33 @@
-export const Game420 = () => {
-    var time = 0
-    const time_text = "0"
+import React, { useRef, useState, useEffect } from "react"
 
-    const startTimer = () => {
-        console.log("Hello balz");
-        time++;
-        console.log(time)
-        time_text = time.toString()
-    }
+export const Game420 = () => {
+    const [time, setTimer] = useState(0)
+    
+    let interval = useRef();
+    const begin_time = 0
+    const runTimer = () => {
+        interval = setInterval(() => {
+            // tmp_time++;
+            setTimer(begin_time);
+            // console.log(tmp_time);
+        }, 5000);
+    };
+
+
+    useEffect(() => {
+        runTimer();
+        return () => {
+            clearInterval(interval.current)
+        };
+    });
+
 
     return (
         <div className="game_420">
             <div className="timer">
                 <h1>420 Gimma</h1>
-                <p>{time_text}</p>
-                <button onClick={startTimer}>Start</button>
+                <p>{time}</p>
+                <button>Start</button>
                 <button>Stop</button>
             </div>
         </div>
