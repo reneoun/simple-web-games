@@ -1,5 +1,3 @@
-
-
 export const GameCard = ({title_text}) => {
     return (
         <div className="game_card">

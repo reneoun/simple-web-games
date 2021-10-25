@@ -41,3 +41,37 @@ code {
   /* opacity: 0.5; */
   background-color: cornflowerblue;
 }
+
+.timer {
+  justify-content: center;
+  border: black solid 4px;
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+.btns420 > button {
+  margin: 10px;
+  width: 40%;
+  height: 2.5em;
+  font-size: 2.2rem;
+  background-color: white;
+  border: black solid 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btns420 > button:hover {
+  background-color: lightgray;
+}
+
+
+.timer > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.timer > p {
+  text-align: center;
+  font-size: 2.4rem;
+}

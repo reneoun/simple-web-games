@@ -1,5 +1,5 @@
-import { GameCard } from "./components/GameCard";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { GameCard } from "./components/GameCard";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Home } from "./components/Home";
 import { Game420 } from "./components/Game420";
 
